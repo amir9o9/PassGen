@@ -8,11 +8,12 @@
 
 ### 🚀 Features
 - Generate random passwords with uppercase, lowercase, numbers, and symbols.
-- Option to specify password length (between 8 to 18 characters).
+- Customizable password length (4-30 characters) with slider and input controls.
+- Toggle character types: Uppercase, Lowercase, Numbers, and Symbols.
+- Password strength indicator (Weak, Average, Strong).
 - Copy password to clipboard with a single click.
-- Toggle advanced options for customization.
 - Visual feedback when password is copied.
-- Responsive and modern UI built with Tailwind CSS.
+- Responsive design that works on mobile and desktop devices.
 
 ---
 
@@ -28,13 +29,17 @@
 
 ### 📂 File Structure
 ```
-components/
-└── PasswordBox.jsx   → Main password generator component
+src/app/
+├── components/
+│   ├── Container.jsx      → Main container component
+│   └── PasswordBox.jsx    → Password generator component
+├── layout.js
+├── page.js
+└── globals.css
 
 public/
-├── copy_icon.png     → Copy button icon
-├── generate_icon.png → Generate password button icon
-└── arrow-icon.png    → Arrow for toggling options
+├── copy_icon.png         → Copy button icon
+└── generate_icon.png     → Generate button icon
 ```
 
 ---
